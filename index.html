@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Navigator AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#007BFF',
+                        secondary: '#F8F9FA',
+                        accent: '#28A745',
+                        error: '#DC3545'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .neumorph {
+            border-radius: 20px;
+            background: #f0f4f8;
+            box-shadow: 20px 20px 60px #ccd1d4,
+                       -20px -20px 60px #ffffff;
+        }
+        .neumorph-inset {
+            border-radius: 20px;
+            background: #f0f4f8;
+            box-shadow: inset 20px 20px 60px #ccd1d4,
+                       inset -20px -20px 60px #ffffff;
+        }
+        .neumorph-button {
+            border-radius: 10px;
+            background: #007BFF;
+            box-shadow: 5px 5px 15px #005ab7,
+                       -5px -5px 15px #009cff;
+            transition: all 0.3s ease;
+        }
+        .neumorph-button:hover {
+            box-shadow: 3px 3px 10px #005ab7,
+                       -3px -3px 10px #009cff;
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body class="bg-[#f0f4f8] min-h-screen">
+    <!-- Navigation -->
+    <nav class="p-4 neumorph m-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-primary text-2xl font-bold">Career Navigator AI</div>
+            <div class="space-x-4">
+                <button class="neumorph-button text-white px-6 py-2">Login</button>
+                <button class="neumorph-button text-white px-6 py-2">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="neumorph p-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-primary mb-6">Navigate Your Career Path with AI</h1>
+            <p class="text-gray-600 text-xl mb-8">Your AI-powered career compass for success in the digital age</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="neumorph-button text-white px-8 py-3 text-lg">
+                    <i class="bi bi-search me-2"></i> Find Your Career Path
+                </button>
+                <button class="neumorph-button text-white px-8 py-3 text-lg">
+                    <i class="bi bi-file-earmark-text me-2"></i> Upload Resume
+                </button>
+                <button class="neumorph-button text-white px-8 py-3 text-lg">
+                    <i class="bi bi-camera-video me-2"></i> Start Mock Interview
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center text-primary mb-12">Key Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="neumorph p-6">
+                <i class="bi bi-graph-up text-4xl text-primary"></i>
+                <h3 class="text-xl font-bold my-4">AI Resume Analysis</h3>
+                <p class="text-gray-600">Get detailed feedback and scoring on your resume with AI-powered analysis</p>
+            </div>
+            <div class="neumorph p-6">
+                <i class="bi bi-compass text-4xl text-primary"></i>
+                <h3 class="text-xl font-bold my-4">Career Recommendations</h3>
+                <p class="text-gray-600">Receive personalized career path suggestions based on your skills and interests</p>
+            </div>
+            <div class="neumorph p-6">
+                <i class="bi bi-chat-dots text-4xl text-primary"></i>
+                <h3 class="text-xl font-bold my-4">AI Mock Interviews</h3>
+                <p class="text-gray-600">Practice interviews with AI-powered feedback on your performance</p>
+            </div>
+            <div class="neumorph p-6">
+                <i class="bi bi-briefcase text-4xl text-primary"></i>
+                <h3 class="text-xl font-bold my-4">Job Matching</h3>
+                <p class="text-gray-600">Get matched with jobs that align with your skills and experience</p>
+            </div>
+            <div class="neumorph p-6">
+                <i class="bi bi-calendar-check text-4xl text-primary"></i>
+                <h3 class="text-xl font-bold my-4">Application Tracking</h3>
+                <p class="text-gray-600">Keep track of your job applications and receive status updates</p>
+            </div>
+            <div class="neumorph p-6">
+                <i class="bi bi-lightning text-4xl text-primary"></i>
+                <h3 class="text-xl font-bold my-4">Skill Gap Analysis</h3>
+                <p class="text-gray-600">Identify and bridge skill gaps with personalized recommendations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="neumorph p-8 text-center">
+            <h2 class="text-3xl font-bold text-primary mb-6">Ready to Start Your Career Journey?</h2>
+            <p class="text-gray-600 mb-8">Join thousands of professionals who have transformed their careers with Career Navigator AI</p>
+            <button class="neumorph-button text-white px-8 py-3 text-lg">
+                Get Started Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="neumorph mt-12 p-8">
+        <div class="container mx-auto text-center text-gray-600">
+            <p>© 2024 Career Navigator AI. All rights reserved.</p>
+        </div>
+    </footer>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
